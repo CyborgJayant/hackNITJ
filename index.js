@@ -1,4 +1,5 @@
 const express=require('express')
+const path=require('path')
 const User=require('./database/user-model.js')
 const auth=require('./auth.js')
 require('./database/connect.js')
@@ -58,6 +59,12 @@ app.post('/users/logOut',async (req,res)=>{
     catch(e){
         return res.status(500).send(e)
     }
+})
+
+
+app.get('*',(req,res)=>{
+    // res.send('<h1>WATCH OUT YOUR CURIOSITY</h1>')
+    res.sendFile(path.join(__dirname,'./img','404img.png'))
 })
 
 app.listen(port,()=>{
