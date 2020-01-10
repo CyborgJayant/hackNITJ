@@ -6,7 +6,7 @@ font-family:sans-serif;
 .hero{
 	height:100%;
 	width:100%;
-	background-image:linear-gradient(rgba(0,0.2,0,0),rgba(0,0.2,0,0)),url(./img/5.jpg);
+	background-image:linear-gradient(rgba(0,0.2,0,0),rgba(0,0.2,0,0)),url(./5.jpg);
 	background-size: cover;
 	background-position:center;
 	position: absolute;
