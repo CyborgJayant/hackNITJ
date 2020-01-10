@@ -2,6 +2,7 @@ const express=require('express')
 const User=require('./database/user-model.js')
 const auth=require('./auth.js')
 require('./database/connect.js')
+const port=process.env.PORT||4000
 
 const app=express()
 
@@ -59,6 +60,6 @@ app.post('/users/logOut',async (req,res)=>{
     }
 })
 
-app.listen(4000,()=>{
-    console.log('Listening on port 4000')
+app.listen(port,()=>{
+    console.log(`Listening on port ${port}`)
 })
