@@ -63,8 +63,7 @@ app.post('/users/logOut',async (req,res)=>{
 
 
 app.get('*',(req,res)=>{
-    // res.send('<h1>WATCH OUT YOUR CURIOSITY</h1>')
-    res.sendFile(path.join(__dirname,'./img','404img.png'))
+     res.send('<h1>WATCH OUT YOUR CURIOSITY</h1>')
 })
 
 app.listen(port,()=>{
