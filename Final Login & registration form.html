@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 	<title> Login & Registration Form</title>
@@ -19,15 +18,15 @@
 		<img src="./img/gm.png">
 	</div>
 	<form id="login" class="input-group">
-		<input type="text" class="input-field" placeholder="User Id" required>
-		<input type="text" class="input-field" placeholder="Enter Password" required>
+		<input type="text" class="input-field" id="uidL" placeholder="User Id" required>
+		<input type="password" class="input-field" id="pswdL" placeholder="Enter Password" required>
 		<input type="checkbox" class="check-box" ><span>Remember Password </span>
 		<button type="submit" class="submit-btn">Log In</button>
 	</form>
 	<form id="register" class="input-group">
-		<input type="text" class="input-field" placeholder="User Id" required>
-		<input type="email" class="input-field" placeholder="Email Id" required>
-		<input type="text" class="input-field" placeholder="Enter Password" required>
+		<input type="text" class="input-field" id="uid" placeholder="User Id" required>
+		<input type="email" class="input-field" id="eid" placeholder="Email Id" required>
+		<input type="password" class="input-field" id="pswd" placeholder="Enter Password" required>
 		<input type="checkbox" class="check-box" ><span>I agree to the terms & conditions</span>
 		<button type="submit" class="submit-btn">Register</button>
 	</form>
@@ -51,5 +50,7 @@
 	z.style.left="0px";
 }
 </script>
+
+<script src="register.js"></script>
 	</body>
 </html>

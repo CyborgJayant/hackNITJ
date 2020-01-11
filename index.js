@@ -13,17 +13,12 @@ app.use(express.json())
 
 app.post('/users/login',async (req,res)=>{
     try{
-        if(!req.body.email || !req.body.password)
-        {
-            throw new Error('Credentials Not Provided')
-        }
-        else
-            {
+        
         const user=await User.findByCred(req.body.email,req.body.password)
         const token=await user.genAuthToken()
         
         return res.send({user,token})
-           }
+           
     }
     catch(e){
         console.log(e)
