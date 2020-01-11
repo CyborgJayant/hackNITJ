@@ -63,7 +63,7 @@ app.post('/users/logOut',async (req,res)=>{
 
 
 app.get('*',(req,res)=>{
-     res.send('<h1>WATCH OUT YOUR CURIOSITY</h1>')
+     res.sendFile(__dirname+'/error.html')
 })
 
 app.listen(port,()=>{
