@@ -12,7 +12,7 @@ regForm.addEventListener('submit',(event)=>{
         password:document.querySelector('#register #pswd').value
     }
     const dataJSON=JSON.stringify(data)
-    const myURL="http://localhost:4000/users/register"
+    const myURL="https://ancient-ocean-36358.herokuapp.com/users/register"
     console.log(dataJSON)
 
     var myHeaders = new Headers();
@@ -42,7 +42,7 @@ loginForm.addEventListener('submit',(event)=>{
         password:document.querySelector('#login #pswdL').value
     }
     const dataJSON=JSON.stringify(data)
-    const myURL="http://localhost:4000/users/login"
+    const myURL="https://ancient-ocean-36358.herokuapp.com/users/login"
     console.log(dataJSON)
 
     var myHeaders = new Headers();
